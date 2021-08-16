@@ -866,7 +866,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener("load", function(event) {
         if (window.localStorage.getItem("sources") === null) {
-            load_data_source('http://area.jochentopf.com/osmm/layers.json');
+            load_data_source('/QA-data/layers.json');
         } else {
             var sources = JSON.parse(window.localStorage.getItem("sources"));
             sources.forEach(function(source) {
